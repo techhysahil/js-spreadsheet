@@ -1,0 +1,68 @@
+/*Common Style*/
+body{
+	margin: 0px;
+	font-size: 16px;
+	font-family: serif;
+}
+input[type="text"],input[type="number"]{
+	height: 24px;
+    padding: 2px 8px;
+    font-size: 14px;
+    color: #666;
+}
+input[type="button"]{
+	    font-size: 14px;
+	    border: 1px solid #ddd;
+	    cursor: pointer;
+	    color: #666;
+	    width: 170px;
+	    height: 32px;
+}
+input:focus{
+	outline: 0px;
+}
+
+
+/*App style*/
+#app{
+	margin: 15px;
+}
+.key{
+	display: inline-block;
+	width: 200px;
+}
+.panel{
+	margin-bottom: 10px;
+}
+#Spreadsheet-wrapper{
+	margin-top: 30px;
+	margin-left: 15px;
+	width: 100%;
+	height: 100%;
+	overflow-x: visible;
+	white-space: nowrap;
+}
+.header .col{
+	font-weight: bold;
+	border-top: 1px solid #aaa;
+	background-color: #ddd;
+	cursor: pointer;
+}
+.header .col:first-child{
+	border-left: 1px solid #aaa;
+	cursor:	auto;
+}
+.col{
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+	color: #666;
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+}
+.col:first-child{
+	border-left: 1px solid #aaa;
+	background-color: #ddd;
+	width: 60px;
+}

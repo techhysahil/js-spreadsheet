@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spreadsheet App</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="app">
+		<!-- Configuration Panels -->
+		<div class="panel">
+			<div class="key">Create New Speadsheet:</div>
+	        <input type="button" value="New" id="createNew" onclick="createNew_Sheet(this);"></input>
+	        <input type="button" value="Save" onclick="buttonSave_Clicked();"></input>
+	    </div>
+
+	    <div class="panel">
+	    	<div class="key">Load File:</div>
+	    	<input type="button" value="Load" onclick="buttonLoad_Clicked();"></input>
+        	<input id="inputFileToLoad" type="file"></input>
+	    </div>
+
+	    <div class="panel">
+	        <div class="key">Name:</div>
+	        <input type="text" id="fileName" onchange="inputName_Changed(this);"></input>
+	    </div>
+
+	    <div class="panel">
+	        <div class="key">Size:</div>
+	        <span>x:</span>
+	        <input type="number" min=0 id="xSize" onchange="inputXSize_Changed(this);"></input>
+	        <span>y:</span>
+	        <input type="number" min=0 id="ySize" onchange="inputYsize_Changed(this);"></input>
+	    </div>
+
+	    <div class="panel">
+	    	<div class="key">Add Row at index(Verticle):</div>
+	    	<input placeholder="Enter index" type="number" id="addRowindex" min=0></input>
+	    	<input type="button" value="Add" onclick="addNewRow(this);"></input>
+	    	<input type="button" value="Delete" onclick="deleteRow(this);"></input>
+	    </div>
+	    <div class="panel">
+	    	<div class="key">Add Column at index(Horizontal):</div>
+	    	<input placeholder="Enter index" type="number" id="addColumnindex" min=0></input>
+	    	<input type="button" value="Add" onclick="addNewColumn(this);"></input>
+	    	<input type="button" value="Delete" onclick="deleteColumn(this);"></input>
+	    </div>
+
+	    <!-- Spreadsheet wrapper -->
+	    <div id="Spreadsheet-wrapper"></div>
+    </div>
+
+	<script src="./js/main.js" type="text/javascript"></script>
+</body>
+</html>
